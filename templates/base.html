@@ -47,15 +47,16 @@
                     <ul class="right hide-on-med-and-down">
                         <li><a href="{{ url_for('get_home') }}">Home</a></li>
                         <li><a href="#">Recipes</a></li>
-                        
+                        <!-- Note: if user logged in, display following links -->
+                        {% if session.user %}
                             <li><a href="#">Profile</a></li>
                             <li><a href="#">Add Recipe</a></li>
-                            <li><a href="#">Log Out</a></li>
-                        
+                            <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+                        {% else %}
                             <li><a href="{{ url_for('login') }}">Log In</a></li>
                             <li><a href="{{ url_for('register') }}">Sign Up</a></li>
                             <li><a href="{{ url_for('contact') }}">Support/Feedback</a></li>
-                        
+                        {% endif %}
                     </ul>
                 </div>
             </nav>
@@ -66,15 +67,16 @@
             <li><h5 class="center-align page-header">Cookery Instructions</h5></li>
             <li><a href="{{ url_for('get_home') }}">Home</a></li>
             <li><a href="">Recipes</a></li>
-            
-                <li><a href="#">Profile</a></li>
+            <!-- Note: if user logged in, display following links -->
+            {% if session.user %}
+                <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                 <li><a href="#">Add Recipe</a></li>
-                <li><a href="#">Log Out</a></li>
-            
+                <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+            {% else %}
                 <li><a href="{{ url_for('login') }}">Log In</a></li>
                 <li><a href="{{ url_for('register') }}">Sign Up</a></li>
                 <li><a href="{{ url_for('contact') }}">Support/Feedback</a></li>
-            
+            {% endif %}
         </ul>
 
     </header>
