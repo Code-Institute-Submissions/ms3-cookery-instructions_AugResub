@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <!-- Hero image section -->
+    <!-- Background image container -->
+   
+        <div class = "slider">
+            <ul class="slides">
+                <li>
+                    <img src="https://images.pexels.com/photos/5593158/pexels-photo-5593158.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="image1">
+                </li>
+                <li>
+                    <img src="https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="image2">
+                </li>
+                <li>
+                    <img src="https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="image3">
+                </li>
+                <li>
+                    <img src="https://images.pexels.com/photos/4163020/pexels-photo-4163020.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="image4">
+                </li>
+                <li>
+                    <img src="https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="image5">
+                </li>
+            </ul>
+
+        </div>
+    
+
+    <!-- Homepage info text section -->
+    <div class="container home-info">
+        <div class="row">
+            <!-- Introductory text section: about site -->
+            <div class="col s12">
+                <h5 class="center-align page-header">Recipes</h5>
+                <div class="divider"></div>
+                <p class="center-align home-text">Cooking Instructions is a recipe sharing website providing a collection of family
+                    recipes, which are simple and quick to make. Start searching our recipes here!</p>
+                <!-- Button link to recipes.html -->
+                <div class="center-align">
+                    <a href="#" class="btn-small">Recipes</a>
+                </div>
+            </div>
+            <!-- Introductory text section: abot registering -->
+            <div class="col s12">
+                <h5 class="center-align page-header">Registered?</h5>
+                <div class="divider"></div>
+                <p class="center-align home-text">Register to receive our weekly newsletter with the latest recipes, and to
+                    start sharing your own recipes!</p>
+                <!-- Button link to register.html -->
+                <div class="center-align">
+                    <a href="#" class="btn-small">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
