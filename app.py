@@ -24,6 +24,13 @@ def get_home():
     return render_template("home.html", home=home)
 
 
+@app.route("/contact", methods=["GET", "POST"])
+def contact():
+    if request.method == "POST":
+        flash("Your message has been sent")
+        return redirect(url_for("get_home"))
+    return render_template("contact.html")
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
