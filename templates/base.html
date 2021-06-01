@@ -49,7 +49,7 @@
                         <li><a href="#">Recipes</a></li>
                         <!-- Note: if user logged in, display following links -->
                         {% if session.user %}
-                            <li><a href="#">Profile</a></li>
+                            <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                             <li><a href="#">Add Recipe</a></li>
                             <li><a href="{{ url_for('logout') }}">Log Out</a></li>
                         {% else %}
