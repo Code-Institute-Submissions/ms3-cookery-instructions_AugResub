@@ -4,6 +4,13 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-family: 'Open Sans', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
 }
 
 /* Text shadow effect on navbar & footer */
