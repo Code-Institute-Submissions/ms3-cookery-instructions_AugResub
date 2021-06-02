@@ -167,6 +167,22 @@ def search():
         {"$text": {"$search": query}}))
     return render_template("recipes.html", recipes=recipes)
 
+
+@app.route("/recipe_details/<recipe_id>")  # RECIPE DETAILS
+def recipe_details(recipe_id):
+    recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    return render_template("recipe_details.html", recipe=recipe)
+
+
+@app.errorhandler(404)  # 404 ERROR
+def page_not_found(error):
+    return render_template('404.html'), 404
+
+
+@app.errorhandler(500)  # 500 ERROR
+def something_wrong(error):
+    return render_template('500.html'), 500
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),

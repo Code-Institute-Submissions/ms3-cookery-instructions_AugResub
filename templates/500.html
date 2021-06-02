@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <!--The code is referred from one of the student of code institute - https://github.com/Kiran6248-->
+    <div class="row center">
+        <!--image-->
+        <div class="col s6 offset-s3 l4 offset-l4">
+            <div class="error-image-container">
+                <img src="{{ url_for('static', filename='images/500-error.png') }}" alt="A man looking at 404"
+                    class="responsive-img error-img">
+            </div>
+        </div>
+
+        <!--content-->
+        <div class="col s12">
+            <div class="error-container">
+                <div class="error-heading">
+                    <h2 class="section-heading">Oops... Our server is an a break.</h2>
+                </div>
+                <div class="error-message flow-text">
+                    <p>Get back to the <a href="{{ url_for('get_home') }}">Cookery Instructions!</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

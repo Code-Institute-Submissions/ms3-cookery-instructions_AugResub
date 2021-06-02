@@ -7,7 +7,7 @@
     <h4 class="page-header center-align">Recipes</h4>
 
         <!-- Search Recipes -->
-        <form action="#" method="POST" class="col s12">
+        <form action="{{ url_for('search') }}" method="POST" class="col s12">
             <div class="row center-align">
                 <!-- Search Text Input -->
                 <div class="input-field col s12">
@@ -16,10 +16,10 @@
                 </div>
                 <!-- Search & Reset Buttons -->
                 <div class="col s12">
-                    <button type="submit" class="teal lighten-2 btn text-shadow">
+                    <button type="submit" class="cyan lighten-2 btn text-shadow">
                         <i class="fas fa-search"></i>
                     </button>
-                    <a href="{{ url_for('get_recipes') }}" class="teal lighten-2 btn text-shadow"><i class="fas fa-times"></i></a>
+                    <a href="{{ url_for('get_recipes') }}" class="cyan lighten-2 btn text-shadow"><i class="fas fa-times"></i></a>
                 </div>
             </div>
         </form>
