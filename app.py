@@ -127,7 +127,7 @@ def add_recipe():
             "recipe_method": request.form.get("recipe_method"),
             "recipe_serves": request.form.get("recipe_serves"),
             "recipe_time": request.form.get("recipe_time"),
-            "recipe_vegetration": recipe_vegetration,
+            "recipe_vegetration": request.form.get("recipe_vegetration"),
             "recipe_addedby": session["user"],
          }
         mongo.db.recipes.insert_one(recipe)
