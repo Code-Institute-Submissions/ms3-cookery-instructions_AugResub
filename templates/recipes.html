@@ -16,10 +16,11 @@
                 </div>
                 <!-- Search & Reset Buttons -->
                 <div class="col s12">
-                    <button type="submit" class="cyan lighten-2 btn text-shadow">
+                    <a href="{{ url_for('get_recipes') }}" class="orange darken-4 btn text-shadow"><i class="fas fa-undo"></i></a>
+                    <button type="submit" class="cyan darken-4 btn text-shadow">
                         <i class="fas fa-search"></i>
                     </button>
-                    <a href="{{ url_for('get_recipes') }}" class="cyan lighten-2 btn text-shadow"><i class="fas fa-times"></i></a>
+                    
                 </div>
             </div>
         </form>
