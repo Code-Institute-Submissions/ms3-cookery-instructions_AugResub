@@ -56,7 +56,10 @@
                     <h5 class="center-align page-header">Method</h5>
                     <div class="divider"></div>
                     {% for line in recipe.recipe_method.splitlines() %} <!-- Note: lists method on display, splits lines at each new line -->
-                    <p class="details">{{ line }}</p>
+                    <p class="details">
+                        <b>Step {{ loop.index }}</b><br> {{ line }}
+                    </p>
+                    <!--<p class="details">{{ line }}</p>-->
                     {% endfor %}
                 </div>
             </div>
