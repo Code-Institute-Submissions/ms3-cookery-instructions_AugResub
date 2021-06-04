@@ -94,12 +94,18 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/profile/<username>", methods=["GET", "POST"])
+@app.route("/profile/<username>", methods=["GET", "POST"])  # PROFILE PAGE
 def profile(username):
     # grab the session user's username from db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-    return render_template("profile.html", username=username)
+    recipes = list(mongo.db.recipes.find())
+    # if existing user display profile
+    if session["user"]:
+        return render_template("profile.html",
+                               username=username, recipes=recipes)
+
+    return redirect(url_for("login"))
 
 
 @app.route("/get_recipes")  # RECIPES PAGE
@@ -114,15 +120,16 @@ def add_recipe():
         recipe_vegetarian = "on" if request.form.get(
             "recipe_vegetarian") else "off"
         recipe = {
+            "category_name": request.form.get("category_name"),
             "recipe_name": request.form.get("recipe_name"),
             "recipe_image": request.form.get("recipe_image"),
             "recipe_ingredients": request.form.get("recipe_ingredients"),
             "recipe_method": request.form.get("recipe_method"),
             "recipe_serves": request.form.get("recipe_serves"),
             "recipe_time": request.form.get("recipe_time"),
-            "recipe_vegetarian": recipe_vegetarian,
-            "recipe_addedby": session["user"]
-        }
+            "recipe_vegetration": recipe_vegetration,
+            "recipe_addedby": session["user"],
+         }
         mongo.db.recipes.insert_one(recipe)
         flash("Recipe added!")
         return redirect(url_for("get_recipes"))
@@ -151,7 +158,7 @@ def edit_recipe(recipe_id):
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
 
     return render_template("edit_recipe.html", recipe=recipe)
-
+    
 
 @app.route("/delete_recipe/<recipe_id>")  # DELETE RECIPE
 def delete_recipe(recipe_id):
