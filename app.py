@@ -116,6 +116,7 @@ def get_recipes():
 
 @app.route("/add_recipe", methods=["GET", "POST"])  # ADD RECIPE
 def add_recipe():
+    categories = mongo.db.categories.find().sort("category_name",1)
     if request.method == "POST":
         recipe_vegetarian = "on" if request.form.get(
             "recipe_vegetarian") else "off"
@@ -134,7 +135,7 @@ def add_recipe():
         flash("Recipe added!")
         return redirect(url_for("get_recipes"))
 
-    return render_template("add_recipe.html")
+    return render_template("add_recipe.html", categories=categories)
 
 
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])  # EDIT RECIPE

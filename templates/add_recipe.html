@@ -11,6 +11,17 @@
             <!-- Form -->
             <form class="col s12" method="POST" action="{{ url_for('add_recipe') }}">
                 <div class="row">
+                    <!--Categories-->
+                    <div class="input-field col s12">
+                        <i class="fas fa-folder-open prefix cyan-text"></i>
+                        <select id="category_name" name="category_name" class="validate" required>
+                          <option value="" disabled selected>Choose Categories</option>
+                          {% for category in categories %}
+                            <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                          {% endfor %}
+                        </select>
+                        <label for="category_name">Categories</label>
+                      </div>
                     <!-- Recipe name input -->
                     <div class="input-field col s12">
                         <input id="recipe_name" name="recipe_name" minlength="1" maxlength="40" 

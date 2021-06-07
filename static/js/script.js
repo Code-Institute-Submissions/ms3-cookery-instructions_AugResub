@@ -6,4 +6,5 @@ $(document).ready(function () {
 /*Carousel Videos*/
 $(document).ready(function () {
     $('.slider').slider({});
+    $('select').formSelect();
 });
