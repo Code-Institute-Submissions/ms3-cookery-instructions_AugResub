@@ -165,8 +165,11 @@ def edit_recipe(recipe_id):
 
 @app.route("/delete_recipe/<recipe_id>")  # DELETE RECIPE
 def delete_recipe(recipe_id):
-    mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
-    flash("Recipe deleted!")
+    recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    if recipe.get("recipe_addedby") != session.get("user", ""):
+        return redirect(url_for("get_recipes"))
+    mongo.db.recipes.remove({"id": ObjectId(recipe_id)})
+    flash("Recipe Successfully Deleted!")
     return redirect(url_for("get_recipes"))
     
 
@@ -182,6 +185,11 @@ def recipe_details(recipe_id):
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     return render_template("recipe_details.html", recipe=recipe)
 
+
+@app.route("/get_categories")
+def get_categories():
+    categories = list(mongo.db.categories.find().sort("category_name", 1))
+    return render_template("categories.html", categories=categories)
 
 @app.errorhandler(404)  # 404 ERROR
 def page_not_found(error):

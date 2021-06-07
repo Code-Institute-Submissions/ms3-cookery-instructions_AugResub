@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h4 class="center-align cyan-text text-darken-4">Manage Categories</h4>
+
+    <div class="container">
+        <!--add category button-->
+        <div class="row">
+            <div class="col s12 center-align">
+                <a href="{{ url_for('get_categories') }}" class="btn-large cyan text-shadow">
+                    Add Category <i class="fas fa-plus-square right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!--category card-->
+        <div class="row">
+            {% for category in categories %}
+                <div class="col s12 m3">
+                    <div class="card cyan lighten-5 text shadow center-align">
+                        <div class="card-content">
+                            <span class="card-title">{{ category.category_name }}</span>
+                        </div>
+                        <div class="card-action">
+                           <a href="#" class="btn-floating center-align green">
+                                Edit</a>
+                            <button data-target="{{ category._id }}" class="btn-floating modal-trigger center_align orange" aria-label="delete category">
+                                    Delete
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Deletion Modal-->
+                <div id="{{ category._id }}" class="modal">
+                    <div class="modal-content">
+                        <h4>Confirm deletion</h4>
+                        <p>Are you sure you want to delete <span class="special-text">{{ category.category_name }}</span> ?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="btn modal-close cyan text-shadow" aria-label="cancel delete button">
+                            Cancel <i class="fas fa-undo-alt right"></i>
+                        </a>
+                        <a href="#" class="btn modal-close orange text-shadow"
+                            aria-label="confirm delete button">
+                            Delete <i class="far fa-trash-alt right"></i>
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}
