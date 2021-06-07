@@ -140,10 +140,12 @@ def add_recipe():
 
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])  # EDIT RECIPE
 def edit_recipe(recipe_id):
+    categories = mongo.db.categories.find().sort("category_name",1)
     if request.method == "POST":
         recipe_vegetarian = "on" if request.form.get(
             "recipe_vegetarian") else "off"
         submit = {
+            "category_name": request.form.get("category_name"),
             "recipe_name": request.form.get("recipe_name"),
             "recipe_image": request.form.get("recipe_image"),
             "recipe_ingredients": request.form.get("recipe_ingredients"),
@@ -158,7 +160,7 @@ def edit_recipe(recipe_id):
 
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
 
-    return render_template("edit_recipe.html", recipe=recipe)
+    return render_template("edit_recipe.html", recipe=recipe, categories=categories)
     
 
 @app.route("/delete_recipe/<recipe_id>")  # DELETE RECIPE
