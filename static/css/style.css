@@ -9,6 +9,9 @@ body {
     flex-direction: column;
 }
 
+h4{
+    color:white;
+}
 main {
     flex: 1 0 auto;
 }
