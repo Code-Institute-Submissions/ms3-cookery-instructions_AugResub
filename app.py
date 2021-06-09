@@ -116,7 +116,7 @@ def get_recipes():
 
 @app.route("/add_recipe", methods=["GET", "POST"])  # ADD RECIPE
 def add_recipe():
-    categories = mongo.db.categories.find().sort("category_name",1)
+    categories = mongo.db.categories.find().sort("category_name", 1)
     if request.method == "POST":
         recipe_vegetarian = "on" if request.form.get(
             "recipe_vegetarian") else "off"
@@ -140,7 +140,7 @@ def add_recipe():
 
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])  # EDIT RECIPE
 def edit_recipe(recipe_id):
-    categories = mongo.db.categories.find().sort("category_name",1)
+    categories = mongo.db.categories.find().sort("category_name", 1)
     if request.method == "POST":
         recipe_vegetarian = "on" if request.form.get(
             "recipe_vegetarian") else "off"
@@ -160,15 +160,16 @@ def edit_recipe(recipe_id):
 
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
 
-    return render_template("edit_recipe.html", recipe=recipe, categories=categories)
-    
+    return render_template(
+        "edit_recipe.html", recipe=recipe, categories=categories)
+
 
 @app.route("/delete_recipe/<recipe_id>")  # DELETE RECIPE
 def delete_recipe(recipe_id):
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
     flash("Recipe Successfully Deleted!")
     return redirect(url_for("get_recipes"))
-    
+
 
 @app.route("/search", methods=["GET", "POST"])  # SEARCH RECIPES
 def search():
@@ -213,7 +214,7 @@ def edit_category(category_id):
         return redirect(url_for("add_category"))
 
     category = mongo.db.categories.find_one({"_id": ObjectId(category_id)})
-    return render_template("edit_category.html", category=category)    
+    return render_template("edit_category.html", category=category)
 
 
 @app.route("/delete_category/<category_id>")
@@ -221,7 +222,7 @@ def delete_category(category_id):
     mongo.db.categories.remove({"_id": ObjectId(category_id)})
     flash("Category Successfully Deleted")
     return redirect(url_for("get_categories"))
-   
+
 
 @app.errorhandler(404)  # 404 ERROR
 def page_not_found(error):
