@@ -165,10 +165,7 @@ def edit_recipe(recipe_id):
 
 @app.route("/delete_recipe/<recipe_id>")  # DELETE RECIPE
 def delete_recipe(recipe_id):
-    recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
-    if recipe.get("recipe_addedby") != session.get("user", ""):
-        return redirect(url_for("get_recipes"))
-    mongo.db.recipes.remove({"id": ObjectId(recipe_id)})
+    mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
     flash("Recipe Successfully Deleted!")
     return redirect(url_for("get_recipes"))
     
