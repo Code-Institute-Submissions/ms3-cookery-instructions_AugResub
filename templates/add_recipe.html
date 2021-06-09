@@ -71,12 +71,12 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="far fa-clock prefix cyan-text"></i>
-                        <input id="recipe_time" name="recipe_time" minlength="1" maxlength="2" type="text" class="validate"
-                            required>
-                        <label for="recipe_time">Time</label>
+                        <input id="recipe_time" name="recipe_time" type="number" minlength="1" maxlength="5" pattern="^[0-9]{1,5}$" class="validate">
+                        <label for="recipe_time"> Time (In Minutes)</label>
                         <span class="register-help">Please enter the minutes needed to make the recipe, just enter the number only (e.g. for 30 mins just enter "30")</span>
                     </div>
                 </div>
+
                 <!-- Vegetarian checkbox input -->
                 <div class="row">
                     <div class="input-field col s12">
