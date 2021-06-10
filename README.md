@@ -11,7 +11,7 @@
 This site is made by using **HTML**, **CSS**, **javascript**, **Python**, **MongoDB**, and **Flask Framework**. 
 The purpose of this site is to show CRUD functionality and Database accessibilty.
 ***
-## Table of Contents
+## Table of Content
 
 * [Project Overview](#project-overview)
 
