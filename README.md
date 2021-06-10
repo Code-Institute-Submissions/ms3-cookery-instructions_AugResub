@@ -146,7 +146,14 @@ CRUD (Create,Read,Update and Delete) functions are required for this project so 
 The wireframe for this project has been made for Three screen sizes(Laptop View, Tablet View and Mobile View).
 
 The wireframes for this Project can be seen here.
-[Wireframe](static/images/wireframe.pdf)
+- [Home Page](static/images/home_page.pdf)
+- [Recipe Page](static/images/recipe_page.pdf)
+- [Add Recipe Page](static/images/addrecipe_page.pdf)
+- [Edit Recipe Page](static/images/editrecipe_page.pdf)
+- [Profile Page](static/images/profile_page.pdf)
+- [Login Page](static/images/login_page.pdf)
+- [Sign Up Page](static/images/signup_page.pdf)
+- [contact Page](static/images/contact_page.pdf)
 
 #### **Database Schema**
 The Schema is pepared for the better understanding of the Database Collection.
