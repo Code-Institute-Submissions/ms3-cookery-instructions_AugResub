@@ -165,7 +165,7 @@ Database Schema can be seen here. [Schema](static/images/database_schema.pdf)
 #### **Sitemap**
 Sitemap is prepared for this site to understand the navigation of the pages.
 
-Sitemap can be seen here. [Sitemap](static/images/sitemap.pdf)
+Sitemap can be seen here. [Sitemap](static/images/site_map.pdf)
 
 ### **Surface**
 #### **Color**
