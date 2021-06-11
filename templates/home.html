@@ -29,41 +29,68 @@
     <!-- Homepage info text section -->
     <div class="container home-info">
         <div class="row">
-            <!-- Text section: about site -->
-            <div class="col s12">
-                <h5 class="center-align page-header">Recipes</h5>
-                <div class="divider"></div>
-                <p class="center-align home-text">Cooking Instructions is a recipe sharing website. Learn easy and simple recipes,
-                    which are quick to make. Let's start to search here!</p>
-                <!-- Button link to recipes.html -->
-                <div class="center-align">
-                    <a href="{{ url_for('get_recipes') }}" class="btn-small">Recipes</a>
+
+            {% if session.user %}
+                <!-- Text section: about site -->
+                <div class="col s12">
+                    <h5 class="center-align page-header">Recipes</h5>
+                    <div class="divider"></div>
+                    <p class="center-align home-text">Cooking Instructions is a recipe sharing website. Learn easy and simple recipes,
+                        which are quick to make. Let's start to search here!</p>
+                    <!-- Button link to recipes.html -->
+                    <div class="center-align">
+                        <a href="{{ url_for('get_recipes') }}" class="btn-small">Recipes</a>
+                    </div>
                 </div>
-            </div>
-            <!-- Text section: about registering -->
-            <div class="col s12">
-                <h5 class="center-align page-header">Register / Login</h5>
-                <div class="divider"></div>
-                <p class="center-align home-text">Register to share your own recipes with us, 
-                    In a few simple steps, you can add your ingredients, method, image and cooking instructions</p>
-                <!-- Button link to register.html -->
-                <div class="center-align">
-                    <a href="{{ url_for('register') }}" class="btn-small">Register</a>
-                    <a href="{{ url_for('login') }}" class="btn-small">Login</a>
+                <!-- Text section: about Support or Feedback -->
+                <div class="col s12">
+                    <h5 class="center-align page-header">Support / Feedback</h5>
+                    <div class="divider"></div>
+                    <p class="center-align home-text">Are you facing any technical problem or 
+                        you have any question or want to give some feedback, 
+                        please feel free to drop here! </p>
+                    <!-- Button link to recipes.html -->
+                    <div class="center-align">
+                        <a href="{{ url_for('contact') }}" class="btn-small">Support/Feedback</a>
+                    </div>
                 </div>
-            </div>
-            <!-- Text section: about Support or Feedback -->
-            <div class="col s12">
-                <h5 class="center-align page-header">Support / Feedback</h5>
-                <div class="divider"></div>
-                <p class="center-align home-text">Are you facing any technical problem or 
-                    you have any question or want to give some feedback, 
-                    please feel free to drop here! </p>
-                <!-- Button link to recipes.html -->
-                <div class="center-align">
-                    <a href="{{ url_for('contact') }}" class="btn-small">Support/Feedback</a>
+            {% else %}
+                <!-- Text section: about site -->
+                <div class="col s12">
+                    <h5 class="center-align page-header">Recipes</h5>
+                    <div class="divider"></div>
+                    <p class="center-align home-text">Cooking Instructions is a recipe sharing website. Learn easy and simple recipes,
+                        which are quick to make. Let's start to search here!</p>
+                    <!-- Button link to recipes.html -->
+                    <div class="center-align">
+                        <a href="{{ url_for('get_recipes') }}" class="btn-small">Recipes</a>
+                    </div>
+                </div>              
+                <!-- Text section: about registering -->
+                <div class="col s12">
+                    <h5 class="center-align page-header">Register / Login</h5>
+                    <div class="divider"></div>
+                    <p class="center-align home-text">Register to share your own recipes with us, 
+                        In a few simple steps, you can add your ingredients, method, image and cooking instructions</p>
+                    <!-- Button link to register.html -->
+                    <div class="center-align">
+                        <a href="{{ url_for('register') }}" class="btn-small">Register</a>
+                        <a href="{{ url_for('login') }}" class="btn-small">Login</a>
+                    </div>
                 </div>
-            </div>
+                <!-- Text section: about Support or Feedback -->
+                <div class="col s12">
+                    <h5 class="center-align page-header">Support / Feedback</h5>
+                    <div class="divider"></div>
+                    <p class="center-align home-text">Are you facing any technical problem or 
+                        you have any question or want to give some feedback, 
+                        please feel free to drop here! </p>
+                    <!-- Button link to recipes.html -->
+                    <div class="center-align">
+                        <a href="{{ url_for('contact') }}" class="btn-small">Support/Feedback</a>
+                    </div>
+                </div>
+            {% endif %}
         </div>
     </div>
 
