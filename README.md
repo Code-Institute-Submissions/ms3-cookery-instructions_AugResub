@@ -419,7 +419,7 @@ One **Edit** and One **Delete** buttons are also there on the top of the page, w
 
 ## **Testing**
 
-The detailed testing report is available here**[Testing](TESTING.md)**
+The detailed testing report is available here[Testing](TESTING.md)
 
 [Go back to Top](#table-of-content)
 ***
