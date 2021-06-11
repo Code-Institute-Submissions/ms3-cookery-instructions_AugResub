@@ -29,7 +29,7 @@
        * [Edit Recipe Page](#edit-recipe-page)
        * [Delete Recipe](#delete-recipe)
        * [Profile Page](#profile-page)
-       * [Manage Catagory Page](#manage-catagory-page)
+       * [Manage Category Page](#manage-category-page)
        * [Support/Feedback Page](#support-feedback-page)
        * [Login Page](#login-page)
        * [Sign up Page](#sign-up-page)
@@ -41,11 +41,8 @@
 
 * [Lighthouse](#lighthouse)
 
-* [Project Barrier](#project-barrier)
+* [Debugging](#debugging)
 
-* [Bug Report](#bug-report)
-    * [Bug Found and Resolved](#bug-found-and-resolved)
-    * [Open Bug](#open-bug)
 
 ***
 
@@ -94,7 +91,7 @@
 Testing client stories from UX part of [README.md](README.md) 
  
 1. As a user, I want to be able to easily find the favourite dishes that I am looking for.
-    * This website has given a online recipes of different varieties.
+    * This website has given a online recipe of different varieties.
     * The recipe  is situated on the navbar or click recipe button from home page, below the slide images. 
 
 2. As a user, I want to search the dishes by using simple words.
@@ -105,13 +102,13 @@ Testing client stories from UX part of [README.md](README.md)
     * The Recipe card show only Image and name of that recipe.
     * When someone wants know the method of recipe while click on the image will go to the recipe detail page.
    
-4. As a user, I want to know the ingredients,method and cooking instruction for specific dishes.
+4. As a user, I want to know the ingredients, method and cooking instruction for specific dishes.
     * The recipe detail page display the full details of recipe 
-    * That page contain Image of specific dish, Name , Serves, Time taken, Ingredients , Method and added by.
+    * That page contains Image of specific dish, Name , Serves, Time taken, Ingredients , Method and added by.
     
 5. As a user, I want to contact the admin of the page if I am facing some technical issues.
     * A support/feedback form is given with the site, the link of which can be found in the Navbar also in home page.
-    * This contact form has Name, Email and Feedback session so that users can give anything in feedback.
+    * This contact form has a Name, Email and Feedback session so that users can give anything in feedback.
     
 6. As a user, I want to register or sign up my account and able to add their own recipes.
     * The link to the Registration form is given in the Navbar and also in home page, which is visible to anyone who is visiting the site.
@@ -123,7 +120,7 @@ Testing client stories from UX part of [README.md](README.md)
     * User can see Edit and Delete button to make some changes.
     * When the user clicks image of the recipe card, it opens in full details of dishes.
     * After clicking the edit button, the user is directed to edit recipe page, where the user can make any changes.
-    * After clikcing the delete button, the user can delete the recipe easily.
+    * After clicking the delete button, the user can delete the recipe easily.
 
 8. As a registered user, I want to login my account and add another recipes.
     * The login form is given in the Navbar also in home page, so it is easy to find. 
@@ -141,7 +138,7 @@ Testing client stories from UX part of [README.md](README.md)
 
 11. As a registered user, I want to logout easily.
     * After Logging user can see Logout link on the navbar.
-    * By clicking the Logout tab user can easily logged out and direct to Login page.
+    * By clicking the Logout tab user can easily log out and direct to Login page.
 
 [Go to Top](#testing)
 ***
@@ -158,7 +155,7 @@ Testing client stories from UX part of [README.md](README.md)
 4. Click the **Recipe** link, check if the recipe page opens.
 5. Click the **Login** link, check if the Login page opens.
 6. Click the **sign Up** link, check if the Register/Sign up page opens.
-7. Click the **Support/Feedback** link, check if the Support/Feddback page opens.
+7. Click the **Support/Feedback** link, check if the Support/Feedback page opens.
 8. Log in to the site, Check If **Profile**, **Add Recipe**, and **Logout** link are visible.
 9. Click the **Profile** link, check if the Profile page opens.
 10. Click the **Add Recipe** link, check if the Add recipe page opens.
@@ -173,7 +170,7 @@ Testing client stories from UX part of [README.md](README.md)
 
 1. Check the **Footer** is always fixed at the bottom of the page.
 2. Click the **Instagram** link, check if it opens my Instagram login page on a different tab.
-3. Click the **Youtube** link, check if it opens the youtube login page on a different tab.
+3. Click the **YouTube** link, check if it opens the youtube login page on a different tab.
 4. Click the **Facebook** link, check if it open the Facebook login page on a different tab. 
 5. Check the copyright display.
 6. Go to the mobile view and check for **responsiveness**.
@@ -188,8 +185,8 @@ Testing client stories from UX part of [README.md](README.md)
 5. Logout from the session and check if the flash message **"You have been Logged Out"** appears.
 6. Add some Recipe and check the flash message **"Recipe Added"** appears.
 7. Edit some recipe card and check for the flash message **"Recipe Updated"** appearance.
-8. delete some posts and check if the flash message **"Recipe Successfully Deleted"**  appears.
-9. log in from Admin account and add some category, check if the flash message **" New category Added"** appears.
+8. Delete some recipes and check if the flash message **"Recipe Successfully Deleted"**  appears.
+9. Log in from Admin account and add some category, check if the flash message **" New category Added"** appears.
 10. Edit some categories and check if the flash message **"Category successfully updated"** appears.
 11. Delete some categories and check if the Flash message **"Category successfully deleted"** appears.
 12. Send some feedback through the Contact form and see if the flash message **"Your feedback is submitted"** appears.
@@ -213,7 +210,7 @@ Testing client stories from UX part of [README.md](README.md)
 
  1. Check the search bar is loading correctly on the Recipe page.
  2. Type any random word and click the search button, the result is showing below the search bar.
- 3. Type any word which has not related to the recipe page. like- "sample", then "No Result Found" should flash below the search bar.
+ 3. Type any word which has not related to the recipe page like- "sample", then "No Result Found" should flash below the search bar.
  4. Click the orange refresh button and the page should be refreshed and all the recipes should appear.
  5. Go to mobile view and repeat steps 1 to 4.
 
@@ -237,7 +234,7 @@ Testing client stories from UX part of [README.md](README.md)
 #### **Add Recipe**
 
  1. Check the Add recipe form is fully responsive and covers half the page in medium to large screen size.
- 2. Check the fields in recipe form display correctly in all screens(medium,small and large).
+ 2. Check the fields in recipe form display correctly in all screens(medium, small and large).
  3. Check for the responsiveness for the images.
 
  #### **Edit Button**
@@ -253,7 +250,7 @@ Testing client stories from UX part of [README.md](README.md)
  2. The delete button should be there on the bottom of the recipe image view in profile page.
  3. Click the Delete button, delete the entire recipe and the user is directed to the recipe page.
  
- ### **Manage Catagory Page**
+ ### **Manage Category Page**
 
  1. Log in with Admin's profile, The **manage Category** link should be there on the Navbar.
  2. Click that and Manage category page opens.
@@ -282,7 +279,7 @@ Testing client stories from UX part of [README.md](README.md)
  3. Check in the **Email** section, check if it gives a message when the email format is not correct.
  4. Write some text in the **Feedback** area, check if it allows writing more than 3 lines.
  5. Click the **Submit** button, check if the email is received in the recipient email address.
- 6. Click the submit button, message apper like **Your feedback is submitted** after click ok button, and submit button text changes to `"Feedback Sent"`.
+ 6. Click the submit button, message appear like **Your feedback is submitted** after click ok button, and submit button text changes to `"Feedback Sent"`.
  7. Go to Mobile view and repeat steps 1 to 6.
 
  ### **Error Handler**
@@ -340,7 +337,7 @@ The following details any issues I came across which are now resolved, for refer
 
  * Delete the recipe was not working . I had mistake on write **mongo.db.recipes.remove({"id": ObjectId(recipe_id)})** instead of **mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})** now its working fine.
 
- The following detials of issues which remain unsolved:
+ The following details of issues which remain unsolved:
 
  * Support/Feedback tab will not display while user logging In.
  * If user logging In they can not edit / delete their recipe on recipe page.
