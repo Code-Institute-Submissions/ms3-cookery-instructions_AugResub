@@ -24,28 +24,27 @@
                 </div>
             </div>
         </form>
-
+        
     <!-- Recipe Cards Display -->
     {% if recipes|length > 0 %} <!-- Note: if recipes search results > 0, display cards, otherwise display 'No results found!' -->
-    <div class="row">
-        {% for recipe in recipes %}
-        <div class="col s12 m6 l4 recipe-container">
-            <div class="card small">
-                <a href="{{ url_for('recipe_details', recipe_id=recipe._id) }}">
-                    <img class="recipe-image" src="{{ recipe.recipe_image }}" alt="Recipe Image" loading="lazy">
-                </a>
-            </div>
-            <p class="recipecard-title">{{ recipe.recipe_name }}</p>
-        </div>
-        {% endfor %}
-    </div>
-    {% else %}
-    <div class="section-noresults">
         <div class="row">
-            <h4 class="page-header center-align">No results found!</h4>
+            {% for recipe in recipes %}
+                <div class="col s12 m6 l4 recipe-container">
+                    <div class="card small">
+                        <a href="{{ url_for('recipe_details', recipe_id=recipe._id) }}">
+                            <img class="recipe-image" src="{{ recipe.recipe_image }}" alt="Recipe Image" loading="lazy">
+                        </a>
+                    </div>
+                    <p class="recipecard-title">{{ recipe.recipe_name }}</p>
+                </div>
+            {% endfor %}
         </div>
-    </div>
+    {% else %}
+        <div class="section-noresults">
+            <div class="row">
+                <h4 class="page-header center-align">No results found!</h4>
+            </div>
+        </div>
     {% endif %}
-    </div>
-
+</div>
 {% endblock %}

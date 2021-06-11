@@ -118,8 +118,7 @@ def get_recipes():
 def add_recipe():
     categories = mongo.db.categories.find().sort("category_name", 1)
     if request.method == "POST":
-        recipe_vegetarian = "on" if request.form.get(
-            "recipe_vegetarian") else "off"
+        recipe_vegetarian = "on" if request.form.get("recipe_vegetarian") else "off"
         recipe = {
             "category_name": request.form.get("category_name"),
             "recipe_name": request.form.get("recipe_name"),
@@ -128,9 +127,9 @@ def add_recipe():
             "recipe_method": request.form.get("recipe_method"),
             "recipe_serves": request.form.get("recipe_serves"),
             "recipe_time": request.form.get("recipe_time"),
-            "recipe_vegetration": request.form.get("recipe_vegetration"),
-            "recipe_addedby": session["user"],
-         }
+            "recipe_vegetarian": recipe_vegetarian,
+            "recipe_addedby": session["user"]
+        }
         mongo.db.recipes.insert_one(recipe)
         flash("Recipe added!")
         return redirect(url_for("get_recipes"))
