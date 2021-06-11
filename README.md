@@ -9,7 +9,7 @@
 # Milestone Project 3
 
 This site is made by using **HTML**, **CSS**, **javascript**, **Python**, **MongoDB**, and **Flask Framework**. 
-The purpose of this site is to show CRUD functionality and Database accessibilty.
+The purpose of this site is to show CRUD functionality and Database accessibility.
 ***
 ## Table of Content
 
@@ -37,7 +37,7 @@ The purpose of this site is to show CRUD functionality and Database accessibilty
 
 * [Features](#features)
     * [Features Used](#features-used)
-    * [Features to be implementd in Future](#features-to-be-implemented-in-future)
+    * [Features to be implemented in Future](#features-to-be-implemented-in-future)
 
 * [Technologies used](#technologies-used)
     * [Tools](#tools)
@@ -48,7 +48,7 @@ The purpose of this site is to show CRUD functionality and Database accessibilty
 
 * [Deployment](#deployment)
     * [Prerequisites](#prerequisites)
-    * [How to Clone Bazaar](#how-to-clone-bazaar)
+    * [How to Clone Cookery Instructions](#how-to-clone-cookery-instrucitons)
     * [How to Deploy to Heroku](#how-to-deploy-to-heroku)
 
 * [Credits](#credits)
@@ -80,9 +80,9 @@ The website is designed to be suitable for use on all devices, from mobile to de
 
 1. As a user, I want to display and work on my site in all devices from large screen monitors, Laptops to tablets and phones.
 2. As a user, I want the website to be visually simple and easy cooking recipes.
-3. As a user, I want to find the recipe listing feature to be searchable, so user can serach for specific recipes.
+3. As a user, I want to find the recipe listing feature to be searchable, so user can search for specific recipes.
 4. As a user, I want an easy login or signup to the website.
-5. As a user, I want the website to be easy to add,edit or delete their own recipes.
+5. As a user, I want the website to be easy to add, edit or delete their own recipes.
 6. As a user, I want the website that focuses on healthier choices and delicious meals.
 
 ### User Stories
@@ -90,7 +90,7 @@ The website is designed to be suitable for use on all devices, from mobile to de
 1. As a user, I want to be able to easily find the favourite dishes that I am looking for.
 2. As a user, I want to search the dishes by using simple words.
 3. As a user, I want to select dishes by their appearance.
-4. As a user, I want to know the ingredients,method and cooking instruction for specific dishes.
+4. As a user, I want to know the ingredients, method and cooking instruction for specific dishes.
 5. As a user, I want to contact the admin of the page if I am facing some technical issues.
 6. As a user, I want to register or sign up my account and able to add their own recipes.
 7. As a registered user, I want to login my account and make some changes to my recipes.
@@ -109,11 +109,11 @@ The aim of making this site is to make a website that has CRUD mechanism and Dat
 I decided to make a cookery instructions site, which will work as a platform for peoples to learn new varieties of dishes in very simple and easy method.
 People who have less experience in cooking and would just like to see recipes, they can do it simply by visiting the website where all the recipes are shown.
 To see recipes, users do not need to register so it is hassle-free.
-The main goal of this wbsite is to provide a recipe platform that is easy to use.
+The main goal of this website is to provide a recipe platform that is easy to use.
 
 ### Scope
 To achieve users goals, below are the minimum features to be included in this project.
-CRUD (Create,Read,Update and Delete) functions are required for this project so these are implemented as a part of essential features.
+CRUD (Create, Read, Update and Delete) functions are required for this project so these are implemented as a part of essential features.
 
 - Simple Home page design that first time users can easily understand the purpose of the website.
 - Recipes are displayed in a grid of "cards" consisting of an image and recipe title, clicking on a recipe button takes you to the recipe details page.
@@ -124,9 +124,9 @@ CRUD (Create,Read,Update and Delete) functions are required for this project so 
 - Profile pages where users can see all their recipes and access to create(add), edit and remove their recipes.
 - Create(add) Recipe page where users can create(add) and post their recipes.
 - Edit Recipe function that users can edit their recipes.
-- Delete Recipe function that users can delete theri recipes.
+- Delete Recipe function that users can delete their recipes.
 - Search by a keyword(s) function that users can search for specific recipes.
-- 404 page that appears for invalid URL and takes user back to *Home* page of the website safely.
+- 404 error page that appears for invalid URL and takes user back to *Home* page of the website safely.
 - Users can contact the admin easily for Support or Feedback.
 
 ### Structure
@@ -137,7 +137,7 @@ CRUD (Create,Read,Update and Delete) functions are required for this project so 
 - There will be a footer, which will show the social network. It will be sticky and always remain at the end of the page. 
 - There are two forms will be there, one for Login and the other for signup. 
 - The support / Feedback form will also be there for the user to contact and get support from admin.
-- There will be pages for adding the new recipes and Editing the already published recipes by the specify users. User can also delete their recipes or post if they want. 
+- There will be pages for adding the new recipes and Editing the already published recipes by the users. User can also delete their recipes or post if they want. 
 - Admin will have the power to delete any post if that is unsuitable for the page. 
 - All the data will be stored in MongoDB and Flask framework will be used to develop the site and finally, it will be deployed by using Heroku.
 
@@ -156,9 +156,9 @@ The wireframes for this Project can be seen here.
 - [contact Page](static/images/contact_page.pdf)
 
 #### **Database Schema**
-The Schema is pepared for the better understanding of the Database Collection.
+The Schema is prepared for the better understanding of the Database Collection.
 
-This Project has 3 collection. Categories,recipes and users.
+This Project has 3 collection. Categories, recipes and users.
 
 Database Schema can be seen here. [Schema](static/images/database_schema.pdf)
 
@@ -194,7 +194,7 @@ It is important for the buttons to have consistent colour with the intuitive sug
 Cyan is used for **Login**, **Register**, Contact form **submit**, **Add Recipe**, **Edit Recipe**,
 **Add categories**, and **Edit category**.
 
-Orange is used for the **Delete**, Contact form **Cancel** button, Recipe search **Undo** button
+Orange is used for the **Delete**, Contact form **Cancel** button, Recipe search **Undo** button.
 
 *  ![#009688](https://www.colorhexa.com/008b8b.png)(cyan)
 *  ![#ff9800](https://via.placeholder.com/15/ff9800/000000?text=+)(orange)
@@ -216,7 +216,7 @@ The Slide Image is taken from Pexel.com. And the recipes are taken from bbcgoodf
 
 ## **Database model**
 
-MongoDB's non-relational database structure is used for this type of site as there are only a few relationship between the various collections. 
+MongoDB's non-relational database structure is used for this type of site as there are only a few relationships between the various collections. 
 
  **Recipes Collection**
  | Key               | Type     |
@@ -257,15 +257,15 @@ MongoDB's non-relational database structure is used for this type of site as the
 **Navigation Bar**
 
 * [MaterializeCSS](https://materializecss.com/navbar.html) is referred for making the Navigation Bar.
-* Navigatin Bar is situated on the top of the page with the **Cookery Instructions** logo on left and menu items on right.
+* Navigation Bar is situated on the top of the page with the **Cookery Instructions** logo on left and menu items on right.
 * The menu is collapsible in mobile view and opens in sidebar, in mobile view the logo is situated in the middle of the Navbar and menu items on left. 
-* The Navbar menu have **Home**, **Recipes**, **Login**, **Sign up** and **Support / Feedback** link for every visitor who visites the site.
+* The Navbar menu have **Home**, **Recipes**, **Login**, **Sign up** and **Support / Feedback** link for every visitor who visits the site.
 * The Navbar menu will change to **Home**, **Recipes**, **Profile**, **Add Recipe**, **Logout** and **Support / Feedback** after the user logged in.
 * The **Manage categories** link is visible only to Admin of the site.
 
 **Footer**
 
-* The Footer is situated at the bottom of every page. Which is having Site slogan, Copyright information and links to social media like Instagram, Youtube and Facebook.
+* The Footer is situated at the bottom of every page. Which is having Site slogan, Copyright information and links to social media like Instagram, YouTube and Facebook.
 * [MaterializeCSS](https://materializecss.com/footer.html) is used to make the footer sticky at the bottom of every page, by adding code in the CSS Style sheet.
 
 #### *Elements on different pages*
@@ -300,10 +300,10 @@ One **Edit** and One **Delete** buttons are also there on the top of the page, w
 
 * The profile page is the first page the user sees after logging in or Registering for the first time.
 * This page has One Welcome note with the current user name.
-* This page will show all the recipes added by the user. If the User has not add any recipe means a Add Recipe button available to open the add recipe page, Where the User can add their recipe.
+* This page will show all the recipes added by the user. If the User has not added any recipe means they can add a new recipe by using  Add Recipe button will direct to the add recipe page, Where the User can add their recipe.
 * Edit & Delete buttons are available to user can edit or delete their recipe.
 
-**Add Reipe Page**
+**Add Recipe Page**
 
 * This page contains more steps:
     1.Choose Category (dropdown)
@@ -325,12 +325,12 @@ One **Edit** and One **Delete** buttons are also there on the top of the page, w
 
 **Edit Recipe Page**
 
-* This page looks the same as the  Add Recipe page.
+* This page looks the same as the Add Recipe page.
 * This page is directed from the View profile page, where a button is given to Edit the recipe. 
   That button is only visible to the owner of the post.
 * When the owner clicks the edit button, all the fields populate with already filled data, which makes it easier to make the changes.
 * 2 buttons are given at the bottom of the form. One to Edit the changes and One to Cancel any changes. 
-* The **Edit Recipe** will click on the page it display a flash message of " Recipe Updated".
+* The **Edit Recipe** will click on the page it displays a flash message of " Recipe Updated".
 * The **Cancel button** will bring the user to the recipe page.
 
 **Delete Recipe**
@@ -344,7 +344,7 @@ One **Edit** and One **Delete** buttons are also there on the top of the page, w
 * This page will have one **Add Category** button on the top of the page.
 * All the categories are shown there with one Edit and one Delete button with every category.
 * The edit button will take the admin to the Edit Category page which have category option and 2 buttons, cancel and edit category. When admin click edit category button display the message **Category Successfully Updated** remains in Add Category page. When admin click cancel button back to **Manage Category** page.
-* The Delete button delets the Category the Admin remains on the **Manage Category** page.
+* The Delete button deletes the Category the Admin remains on the **Manage Category** page.
 
 **Logout**
 
@@ -361,9 +361,9 @@ One **Edit** and One **Delete** buttons are also there on the top of the page, w
 ### **Features to be implemented in future**
 
 * Resetting Password when User Forget it.
-* Pagination of page will added to avoid too many recipes displayed on one page.
+* Pagination of page will add to avoid too many recipes displayed on one page.
 * Get the Review from the User.
-* Recipe posted Date will shown on recipe page.
+* Recipe posted Date will be shown on recipe page.
 
 [Go back to Top](#table-of-content)
 ***
@@ -404,9 +404,9 @@ One **Edit** and One **Delete** buttons are also there on the top of the page, w
 
 ## **Resources**
 
- * [Code Institute Course Content](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DCP101+2017_T3/courseware/9e2f12f5584e48acb3c29e9b0d7cc4fe/054c3813e82e4195b5a4d8cd8a99ebaa/)- Main source of fundamental knowledge.
+ * [Code Institute Course Content](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DCP101+2017_T3/courseware/9e2f12f5584e48acb3c29e9b0d7cc4fe/054c3813e82e4195b5a4d8cd8a99ebaa/)- Main sources of fundamental knowledge.
 
- * Code institute **Slack Community**- Main source of assistance.
+ * Code institute **Slack Community**- Main sources of assistance.
 
  * Code institute **Mentor Support**.
 
@@ -438,7 +438,7 @@ The detailed testing report is available here**[Testing](TESTING.md)**
 
 [Mongo DB](https://www.mongodb.com/)
 
-* MongoDB is the database used by the app tp store content uploaded by its users.
+* MongoDB is the database used by the app to store content uploaded by its users.
 * The following collection should be created:
 
     * recipes
@@ -448,7 +448,7 @@ The detailed testing report is available here**[Testing](TESTING.md)**
     * users
 
    
-### **How to clone Bazaar**
+### **How to clone Cookery Instructions**
 
 To clone this project from its [GitHub repository](https://github.com/vijusuren/ms3-cookery-instructions):
 
@@ -471,13 +471,13 @@ To clone this project from its [GitHub repository](https://github.com/vijusuren/
         os.environ.setdefault("MONGO_DBNAME", "<database name>")
 
 8. **Make sure that env.py is listed in your .gitignore file to prevent your environment variable being pushed publicly**.
-9. The app can be run locally using 
+9. The app can be run locally using: 
 
         python3 app.py
 
 ### **How to deploy to Heroku**
 
-To deploy the aoo to Heroku from its [GitHub repository](https://github.com/vijusuren/ms3-cookery-instructions): the following steps were taken:
+To deploy the app to Heroku from its [GitHub repository](https://github.com/vijusuren/ms3-cookery-instructions): the following steps were taken:
 
   1. From the GitPod terminal, create **requirements.txt** and **Procfile** using these commands:
 
