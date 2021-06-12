@@ -146,14 +146,14 @@ CRUD (Create, Read, Update and Delete) functions are required for this project s
 The wireframe for this project has been made for Three screen sizes(Laptop View, Tablet View and Mobile View).
 
 The wireframes for this Project can be seen here.
-- [Home Page](static/images/home_page.pdf)
-- [Recipe Page](static/images/recipe_page.pdf)
-- [Add Recipe Page](static/images/addrecipe_page.pdf)
-- [Edit Recipe Page](static/images/editrecipe_page.pdf)
-- [Profile Page](static/images/profile_page.pdf)
-- [Login Page](static/images/login_page.pdf)
-- [Sign Up Page](static/images/signup_page.pdf)
-- [contact Page](static/images/contact_page.pdf)
+- [Home Page](static/docs/home_page.pdf)
+- [Recipe Page](static/docs/recipe_page.pdf)
+- [Add Recipe Page](static/docs/addrecipe_page.pdf)
+- [Edit Recipe Page](static/docs/editrecipe_page.pdf)
+- [Profile Page](static/docs/profile_page.pdf)
+- [Login Page](static/docs/login_page.pdf)
+- [Sign Up Page](static/docs/signup_page.pdf)
+- [contact Page](static/docs/contact_page.pdf)
 
 #### **Database Schema**
 The Schema is prepared for the better understanding of the Database Collection.
@@ -172,7 +172,6 @@ Sitemap can be seen here. [Sitemap](static/images/site_map.pdf)
 The color theme is used from Materializecss.com. It is decided by keeping Hero image in consideration and mainly two colours cyan(#006064 ) 
 and light-blue(#03a9f4) and their shades are used according to the page requirement.
 
-![image](static/images/colour.jpg)
 
 **Core**
 
