@@ -214,7 +214,7 @@ Testing client stories from UX part of [README.md](README.md)
  4. Click the orange refresh button and the page should be refreshed and all the recipes should appear.
  5. Go to mobile view and repeat steps 1 to 4.
 
- ### ** Recipe Page**
+ ### **Recipe Page**
 
  1. Check for the positioning of the recipe cards, it is well-aligned.
  2. Check for the image sizing of the cards, all images are equal in size.
