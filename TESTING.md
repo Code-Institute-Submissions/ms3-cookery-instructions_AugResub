@@ -53,7 +53,7 @@
 
    * W3C markup validation service is used for the testing of the **HTML** of all  HTML pages and the initial result was this.
 
-    ![image](static/images/html_error.JPG)
+![image](static/images/html_error.JPG)
 
   So, the section is removed. The final result is this
 
