@@ -293,7 +293,7 @@ MongoDB's non-relational database structure is used for this type of site as the
      - Methods are display on the right bottom side
      - At the end show the username who added that recipe.
      - At the bottom there is a button available to back to **recipe** page.
-One **Edit** and One **Delete** buttons are also there on the top of the page, which is visible only to the owner of the recipe(added by) and to the Admin of the site.
+
 
 **Profile Page**
 
