@@ -86,7 +86,7 @@
 
 ***
 
-## **Client Stories Testing**
+## **User Stories Testing**
 
 Testing client stories from UX part of [README.md](README.md) 
  
