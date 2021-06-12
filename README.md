@@ -287,12 +287,12 @@ MongoDB's non-relational database structure is used for this type of site as the
 
 * This page will open after click on the image on **recipe** page.
 * This page has a full details methods of specific Recipes:
-    1.Image of the recipe display on the right side
-    2.Name of the recipe , serves, time and vegetarian will on right side.
-    3.Ingredients are display on the left bottom side
-    4.Methods are display on the right bottom side
-    5.At the end show the username who added that recipe.
-    6.At the bottom there is a button available to back to **recipe** page.
+     - Image of the recipe display on the right side
+     - Name of the recipe , serves, time and vegetarian will on right side.
+     - Ingredients are display on the left bottom side
+     - Methods are display on the right bottom side
+     - At the end show the username who added that recipe.
+     - At the bottom there is a button available to back to **recipe** page.
 One **Edit** and One **Delete** buttons are also there on the top of the page, which is visible only to the owner of the recipe(added by) and to the Admin of the site.
 
 **Profile Page**
