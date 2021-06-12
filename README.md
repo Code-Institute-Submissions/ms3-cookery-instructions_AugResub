@@ -300,7 +300,7 @@ MongoDB's non-relational database structure is used for this type of site as the
 * The profile page is the first page the user sees after logging in or Registering for the first time.
 * This page has One Welcome note with the current user name.
 * This page will show all the recipes added by the user. If the User has not added any recipe means they can add a new recipe by using  Add Recipe button will direct to the add recipe page, Where the User can add their recipe.
-* Edit & Delete buttons are available to user can edit or delete their recipe.
+* Edit & Delete buttons are available to user and admin can edit or delete their recipe.
 
 **Add Recipe Page**
 
