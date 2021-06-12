@@ -305,20 +305,20 @@ MongoDB's non-relational database structure is used for this type of site as the
 **Add Recipe Page**
 
 * This page contains more steps:
-    1.Choose Category (dropdown)
-    2.Recipe Name
-    3.Image URL
-    4.Ingredients
-    5.Methods
-    6.Serves
-    7.Time(In Minutes)
-    8.Vegetarian(switches)
+    1. Choose Category (dropdown)
+    2. Recipe Name
+    3. Image URL
+    4. Ingredients
+    5. Methods
+    6. Serves
+    7. Time(In Minutes)
+    8. Vegetarian(switches)
 * This form has one Add Recipe button at the end to add the recipe
 * Once the recipe is added the user is directed to the recipe page.
 * The Categories are:
-    1.Vegetarian
-    2.Non Vegetarian
-    3.Desserts
+    1. Vegetarian
+    2. Non Vegetarian
+    3. Desserts
 * These categories can be added or removed by the Admin.
 * Each input section is compulsory and is validated by adding one Materialize code in Script page. This code is provided by Code Institute.
 
