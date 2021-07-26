@@ -118,7 +118,8 @@ def get_recipes():
 def add_recipe():
     categories = mongo.db.categories.find().sort("category_name", 1)
     if request.method == "POST":
-        recipe_vegetarian = "on" if request.form.get("recipe_vegetarian") else "off"
+        recipe_vegetarian = "on" if request.form.get(
+            "recipe_vegetarian") else "off"
         recipe = {
             "category_name": request.form.get("category_name"),
             "recipe_name": request.form.get("recipe_name"),
@@ -232,7 +233,8 @@ def page_not_found(error):
 def something_wrong(error):
     return render_template('500.html'), 500
 
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
-            debug=True)
+            debug=False)
